@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = file("account.json")
-  project     = "cicddemo"
-  region      = "us-central1"
+  credentials = "${file("/path/to/SA.json")}"
+  version = "~> 3.1"
 }
+
